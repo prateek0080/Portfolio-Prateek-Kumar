@@ -1,10 +1,12 @@
 import React from "react";
+import profilePic from "../assets/images/profile-pic.jpeg";
+
 
 const Hero = () => {
   const downloadResume = () => {
     // Create a link to download the resume from assets folder
     const a = document.createElement("a");
-    a.href = "/src/assets/resume.pdf";
+    a.href = "/resume.pdf";
     a.download = "Prateek Kumar - Resume.pdf";
     a.target = "_blank";
     document.body.appendChild(a);
@@ -40,7 +42,7 @@ const Hero = () => {
           </div>
           <div className="hero-image">
             <div className="image-placeholder">
-              <img src="src\assets\images\profile-pic.jpeg" alt="Profile" />
+              <img src={profilePic} alt="Profile" />
             </div>
           </div>
         </div>
