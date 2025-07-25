@@ -1,12 +1,11 @@
 import React from "react";
 import profilePic from "../assets/images/profile-pic.jpeg";
 
-
 const Hero = () => {
   const downloadResume = () => {
     // Create a link to download the resume from assets folder
     const a = document.createElement("a");
-    a.href = "/resume.pdf";
+    a.href = "/Prateek Kumar - Resume.pdf";
     a.download = "Prateek Kumar - Resume.pdf";
     a.target = "_blank";
     document.body.appendChild(a);

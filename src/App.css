@@ -507,19 +507,21 @@ section {
 
 .project-image {
   position: relative;
-  height: 250px;
+  min-height: 200px;
+  max-height: 300px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
 }
 
 .project-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
   transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.05);
 }
 
 .project-overlay {
@@ -572,7 +574,6 @@ section {
   font-size: 0.875rem;
   font-weight: 500;
 }
-
 /* Skills Section */
 .skills {
   background: var(--bg-secondary);
